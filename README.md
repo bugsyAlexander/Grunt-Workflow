@@ -1,9 +1,12 @@
-# Responsive Css with Sass and Compass 
+# Responsive workflow 
 
-### Basic grunt settup
+## Css with Sass and Compass 
+
+### Basic grunt settup 
 
 #### Included
 * Sass 
 * Compass
 * Grunt
+* Susy
 * Git 
