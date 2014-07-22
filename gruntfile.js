@@ -10,8 +10,10 @@ module.exports = function(grunt) {
       } //my_target
     }, //uglify
     watch: {
-    	files: ['_/components/js/*.js'],
-    	tasks: ['uglify']
+    	scripts : {
+    		files: ['_/components/js/*.js'],
+    		tasks: ['uglify']
+    	} // script
     } // watch
   }) //initConfig
   grunt.registerTask('default', 'watch');
