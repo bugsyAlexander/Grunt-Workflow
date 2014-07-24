@@ -59,6 +59,6 @@ p {
 }
 
 section {
-	@include container;
+	@include container();
 	padding: 3%;
 } // section 
