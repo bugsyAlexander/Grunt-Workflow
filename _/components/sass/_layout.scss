@@ -1,9 +1,25 @@
 // susy setup
-$total-columns		: 12;
-$column-width		: 4em;
-$gutter-width		: 1em;
-$grid-padding		: $gutter-width;
+$susy : (
+	column  : 12,
+	gutters : 1/4,
+	math 	: fluid,
+	output  : float,
+	gutter-position: inside,
+);
 
-$small		: 30em;
-$medium		: 47em;
-$large		: 75em;
+@include layout(24 1/4 fluid float inside);
+
+section {
+	background: $off-white;
+	@include container(60em);
+	article {
+		@include span(8 of 12);
+	} // article 
+	aside { // start at the ninth column
+	@include span(4 at 9 of 12);
+	} // aside
+}
+
+body {
+	background: #eee;
+}

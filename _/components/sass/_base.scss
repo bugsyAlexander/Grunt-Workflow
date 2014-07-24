@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Abel|Fjalla+One");
 
-@include edit();
+// @include edit();
 
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -10,7 +10,6 @@ body {
 	-webkit-font-smoothing: antialiased;
     font-family: $font-secondary;
     font-size: 1.2rem;
-    // line-height: 160%;
     line-height: 1.4;
     color: $primary-color;
 }
@@ -20,6 +19,7 @@ body {
     color: $primary-color;
     margin-bottom: .4rem;
     padding-top: 10px;
+    letter-spacing: 1px;
     @include text-shadow(#CCC 1px 1px);
 }
 
@@ -51,7 +51,10 @@ a {
 	color: $brand-orange;
     text-decoration: none;
     font-size: 1rem;
-    &:hover {}
+    &:hover {
+        color: $gold;
+        text-decoration: underline;
+    }
 }
 
 p {
@@ -59,6 +62,5 @@ p {
 }
 
 section {
-	@include container();
-	padding: 3%;
+    padding: 8px;
 } // section 
