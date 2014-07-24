@@ -1,19 +1,20 @@
 @import url("http://fonts.googleapis.com/css?family=Abel|Fjalla+One");
 
 body {
+	-webkit-font-smoothing: antialiased;
     font-family: $font-secondary;
     font-size: 1.2rem;
-    line-height: 160%;
+    // line-height: 160%;
+    line-height: 1.4;
     color: $primary-color;
 }
 
 #{headings()} {
-	-webkit-font-smoothing: antialiased;
     font-family: $font-primary;
-    color: $gold;
+    color: $primary-color;
     margin-bottom: .4rem;
     padding-top: 10px;
-    // @include text-shadow(color 1px 1px);
+    @include text-shadow(#CCC 1px 1px);
 }
 
 h1 {
