@@ -1,0 +1,17 @@
+// hero ------------
+
+.hero {
+	background: $brand-red-orange;
+	section {
+		@include single-transition(all, 1s, ease-out);
+		display: block;	
+		width: 100%;
+		height: 450px;
+		@include background(image-url('misc/cover.jpg'));
+		background-position: center center;
+		background-repeat: no-repeat;
+		@include cover-img;
+		margin: 0 auto;
+
+	} // hero
+} // section 
