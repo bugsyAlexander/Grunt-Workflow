@@ -1,10 +1,15 @@
 // susy setup
-$susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position: inside);
+// $susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position: inside);
+$total-columns  : 7;
+$column-width   : 4.25em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
 
-@include layout(24 1 / 4 fluid float inside);
+// @include layout(24 1 / 4 fluid float inside);
 
 @include breakpoint(papa-bear) {
 	section {
+        @include single-transition(all, 1s, ease-out);
 	    background: $off-white;
 	    padding: 8px;
 	    @include container(60em);
@@ -26,6 +31,7 @@ $susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position:
 @include breakpoint(mama-bear) {
     /* Styles */
     section {
+        @include single-transition(all, 1s, ease-out);
     	@include container(37.5em);
     	padding: 0 16px;
         article {
@@ -45,6 +51,7 @@ $susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position:
 @include breakpoint(baby-bear) {
     /* Styles */
     section {
+        @include single-transition(all, 1s, ease-out);
         article {
             @include span(12 of 12);
         }
@@ -55,18 +62,4 @@ $susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position:
         }
         // aside
     }
-}
-
-// Header ------------
-.header {
-	background: #cd2d0d;
-	section {
-		background: #cd2d0d;
-		img {
-			width: 100%;
-			height: 100%;
-			max-width: 500px;
-			max-height: 500px;
-		}
-	}
 }

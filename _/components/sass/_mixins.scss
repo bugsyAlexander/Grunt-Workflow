@@ -18,3 +18,11 @@
      @media (max-width: 650px) { @content ; }
   }
 }
+
+// cover image
+@mixin cover-img() {
+  -webkit-background-size: cover;
+  -mos-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
