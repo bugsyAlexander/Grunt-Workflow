@@ -1,25 +1,59 @@
 // susy setup
-$susy : (
-	column  : 12,
-	gutters : 1/4,
-	math 	: fluid,
-	output  : float,
-	gutter-position: inside,
-);
+$susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position: inside);
 
-@include layout(24 1/4 fluid float inside);
+@include layout(24 1 / 4 fluid float inside);
 
-section {
-	background: $off-white;
-	@include container(60em);
-	article {
-		@include span(8 of 12);
-	} // article 
-	aside { // start at the ninth column
-	@include span(4 at 9 of 12);
-	} // aside
+@include breakpoint(papa-bear) {
+	section {
+	    background: $off-white;
+	    @include container(60em);
+	    article {
+	        @include span(8 of 12);
+	    }
+	    // article
+	    aside {
+	        // start at the ninth column
+	        @include span(4 at 9 of 12);
+	    }
+	    // aside
+}
+	body {
+	    background: #eee;
+	}
 }
 
-body {
-	background: #eee;
+@include breakpoint(mama-bear) {
+    /* Styles */
+    section {
+    	@include container(50em);
+    	padding: 0 16px;
+        article {
+            @include span(12 of 12);
+        }
+        // article
+        aside {
+            // start at the ninth column
+            @include span(12 of 12);
+        }
+        // aside
+    }
+}
+
+
+// mobile
+@include breakpoint(baby-bear) {
+    /* Styles */
+    section {
+    	@include container(37.5em);
+    	padding: 0 16px;
+        article {
+            @include span(12 of 12);
+        }
+        // article
+        aside {
+            // start at the ninth column
+            @include span(12 of 12);
+        }
+        // aside
+    }
 }
