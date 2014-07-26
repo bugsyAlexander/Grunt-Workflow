@@ -6,6 +6,7 @@ $susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position:
 @include breakpoint(papa-bear) {
 	section {
 	    background: $off-white;
+	    padding: 8px;
 	    @include container(60em);
 	    article {
 	        @include span(8 of 12);
@@ -25,7 +26,7 @@ $susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position:
 @include breakpoint(mama-bear) {
     /* Styles */
     section {
-    	@include container(50em);
+    	@include container(35.5em);
     	padding: 0 16px;
         article {
             @include span(12 of 12);
@@ -44,8 +45,6 @@ $susy: (column: 12, gutters: 1 / 4, math: fluid, output: float, gutter-position:
 @include breakpoint(baby-bear) {
     /* Styles */
     section {
-    	@include container(37.5em);
-    	padding: 0 16px;
         article {
             @include span(12 of 12);
         }

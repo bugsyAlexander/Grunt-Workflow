@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Abel|Fjalla+One");
 
-// @include edit();
+@include edit();
 
 *, *:before, *:after {
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -60,7 +60,3 @@ a {
 p {
     margin-bottom: 10px;
 }
-
-section {
-    padding: 8px;
-} // section 
